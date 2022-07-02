@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue: #377dff; 
+    --dark-blue: #21325b; 
+    --grey-back: #e7e7ec; 
+    --light-back: #F7F9FB; 
+    --dark-text: #2f2d51; 
+    --light-text: #77838f; 
+    --light-orange: #FFC78B;
+    --light-viloet: #B8B2FD;
+    --dark-gray-70:rgba(47, 45, 81, 0.7);
+    --button-color: #4A8F9F;
+    --button-bars: #090761;
+    --minutes-color:rgb(25 110 205 / 10%);
+    --text-minutes-color:rgb(25 110 205 / 70%);
+
+}
+
+.container-fluid {
+    padding: 0px;
+    margin: 111px 0px 0px -15px;
+
+}
+
+/* label {
+    border: 1px solid currentColor;
+    padding: 5px 10px;
+    color: black;  
+    cursor: pointer;
+    user-select: none;
+    margin-left: 550px;
+  }
+  
+  input[type="checkbox"] {
+    margin-left: 550px;
+  } 
+
+ input[type="checkbox"]:checked ~ .sidebar__left {
+    transform: translateX(0px);
+  } */
+
+  .button { 
+    background-color: var(--button-bars);
+}
+
+
+.sidebar-button {
+    max-width:60px;
+    padding: 15px;
+    border-radius: 0px 4px 4px 0px;
+    position: absolute;
+    margin-left: 392px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.sidebar__left {
+    z-index: 10;  
+    width: 450px;
+    margin-left: 0px;
+    margin-top: 111px;
+    padding: 0px;
+    /* transition: transform ease-out 0.25s;
+    transform: translateX(-390px); */
+    
+    
+}
+
+
+
+.sidebar__left_content {
+width: 390px;
+max-height: 969px;
+margin-left: 0px;
+margin-right: 720px;
+margin-top: 111px;
+padding: 0px;
+background: #FFFFFF;
+border: 1px solid var(--grey-back);
+box-shadow: 0px 8px 15px rgba(140, 152, 164, 0.1);
+overflow-x: hidden;
+overflow-y: overlay;
+
+}
+
+
+.sidebar__left_search-input {
+    height: 50px;
+    background-image: url('./images/search.svg');
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    padding: 15px auto 15px 58px !important;
+    margin: 30px;
+    border: 1px solid var(--grey-back);
+    border-radius: 4px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+input[type="text" i] {
+    border-style: none;
+    margin: 16px auto 58px 45px;
+}
+
+.courses-list_item-name {
+    background-image: url('./images/course_name_open.svg');
+    background-position: left;
+    background-repeat: no-repeat;
+    margin: 27px 30px;
+    padding: 0px 0px 0px 30px;
+    font-family: 'Jost';
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 26px;
+color: var(--dark-text);
+}
+
+.courses-list_inner-open {
+position: relative;
+background-image: url('./images/between_element_bar.svg');
+background-position: bottom;
+background-repeat: no-repeat;
+display: inline-flex;
+width: 390px;
+
+}
+
+.courses-list_inner-locked {
+    position: relative;
+background-color: var(--light-back);
+background-image: url('./images/between_element_bar.svg');
+background-position: bottom;
+background-repeat: no-repeat;
+display: inline-flex;
+width: 390px;
+
+}
+
+.courses-list_inner-content {
+    position: relative;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 18px 130px 21px 60px;
+}
+
+.courses-list_link {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: var( --light-text);
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.content-icon {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 6px;
+    vertical-align: middle;
+}
+
+
+.minutes {
+    position: absolute;
+    background-color: var(--minutes-color) ;
+    color:var(--text-minutes-color);
+    border-radius: 4px;
+    height: 30px;
+    width: 50px;
+    margin-top: -30px;
+    margin-left: 200px;
+    padding: 0px 13px;
+    text-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.play-lock-icon {
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    margin-top: -26px;
+    margin-left: 290px;
+}
+
+/* Works on Firefox */
+.sidebar__left_content::-webkit-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--grey-back);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  .sidebar__left_content::-webkit-scrollbar {
+    width: 4px;
+    z-index: 9999999999;
+  }
+
+  /* Works on Chrome, Edge, and Safari  */
+
+  .sidebar__left_content::-webkit-scrollbar-thumb {
+    background-color: var(--grey-back);
+    width: 4px;
+    height: 120px;
+    z-index: 999999999;
+  }
